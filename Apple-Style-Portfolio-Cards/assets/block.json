@@ -1,0 +1,42 @@
+{
+  "apiVersion": 2,
+  "name": "vac/cards",
+  "title": "Volunteer Apple Cards",
+  "category": "media",
+  "icon": "heart",
+  "description": "Apple Watch-style experience cards with customizable dimensions",
+  "attributes": {
+    "defaultTextColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "defaultFontSize": {
+      "type": "string",
+      "default": "32"
+    },
+    "cardGap": {
+      "type": "string",
+      "default": "24px"
+    },
+    "cardsPerRow": {
+      "type": "number",
+      "default": 3
+    },
+    "defaultCardWidth": {
+      "type": "string",
+      "default": "372"
+    },
+    "defaultCardHeight": {
+      "type": "string",
+      "default": "523.55"
+    },
+    "cards": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"]
+  }
+}

@@ -1,0 +1,60 @@
+.awen-marquee-wrapper {
+    overflow: hidden;
+    background-color: var(--bg-color, #ffffff);
+    display: flex;
+    align-items: center; /* Ensures content is vertically centered when a specific height is set */
+    width: var(--block-width, 100%);
+    height: var(--block-height, auto);
+    padding: 24px 0;
+    box-sizing: border-box;
+    margin: 0 auto; /* Centers the block itself if width is less than 100% */
+}
+
+.awen-marquee-track {
+    display: flex;
+    width: max-content;
+    animation: awen-marquee-scroll var(--speed, 20s) linear infinite;
+}
+
+.awen-marquee-track:hover {
+    animation-play-state: paused;
+}
+
+.awen-marquee-content {
+    display: flex;
+    gap: var(--gap, 48px);
+    padding-right: var(--gap, 48px);
+    align-items: center;
+}
+
+.awen-marquee-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+}
+
+.awen-marquee-icon {
+    width: var(--img-size, 40px);
+    height: var(--img-size, 40px);
+    object-fit: contain;
+    display: block;
+}
+
+.awen-marquee-text {
+    font-size: var(--text-size, 24px);
+    font-weight: var(--text-weight, 600);
+    color: var(--text-color, #000000);
+    font-family: inherit;
+    margin: 0;
+    line-height: 1.2;
+}
+
+@keyframes awen-marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
